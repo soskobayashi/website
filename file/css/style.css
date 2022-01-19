@@ -3,18 +3,18 @@
 .BackGround{
     position: absolute;
     background-color: rgb(5, 5, 27);
-    /* background-image: url('../image/valorant2.png');
-    background-size: contain;
-    background-attachment: fixed; */
-    width: 100%;
+    /*background-image: url('../image/valorant.jpg');*/
+    min-height:100vh;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
 }
 
 .MovieArea {
     position: relative;
     margin: 50px 5%;
     width: 90%;
-    height: 2000px;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .class3 {
