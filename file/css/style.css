@@ -1,0 +1,88 @@
+/*Y7989928H*/
+
+.BackGround{
+    position: absolute;
+    background-color: rgb(5, 5, 27);
+    /* background-image: url('../image/valorant2.png');
+    background-size: contain;
+    background-attachment: fixed; */
+    width: 100%;
+}
+
+.MovieArea {
+    position: relative;
+    margin: 50px 5%;
+    width: 90%;
+    height: 2000px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.class3 {
+    position: relative;
+    margin-top: 50px;
+}
+
+.Center {
+    height: 60px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display:table;
+    text-align:center;
+}
+
+.hidden_box {
+    margin: 1m 0;
+    padding: 5px;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor :pointer;
+    transition: .5s;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+    display: inline-block;
+    content: url('../image/valorant2gs.png');
+    font-family: 'FontAwesome';
+    transition: 0.2s;
+}
+
+/*ボタンホバー時
+.hidden_box label:hover {
+    background: rgba(192, 192, 192, 0.493);
+}*/
+
+/*アイコンを切り替え*/
+.hidden_box input:checked ~ label:before {
+    content: url('../image/valorant2.png');
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #668ad8;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
